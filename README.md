@@ -1,2 +1,0 @@
-# proyectopagweb
-Proyecto de prueba
