@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    line-height: 1.5;
+    margin: 0px;
+    background-color: blanchedalmond;
+}
+
+.encabezado {
+    text-align: center;
+    background-color: rgb(25, 17, 45);
+    color: rgb(255, 255, 255);
+
+    border-radius: 18px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.imagen{
+    width: 300px;
+}
+
+.seccion {
+    margin: 20px;
+    padding: 14px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
