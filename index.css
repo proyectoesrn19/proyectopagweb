@@ -96,7 +96,7 @@ main div:has(video) {
 
 /* Estilos para las imágenes */
 img {
-    max-width: 500px; /* La imagen no excederá el ancho de su contenedor */
+    max-width: 150px; /* La imagen no excederá el ancho de su contenedor */
     height: auto; /* Mantiene la proporción */
     border-radius: 8px; /* Bordes redondeados para la imagen */
     margin: 20px auto; /* Centra la imagen horizontalmente y añade margen vertical */
@@ -106,7 +106,7 @@ img {
 
 /* Estilos para el video */
 video {
-    max-width: 500px; /* El video no excederá el ancho de su contenedor */
+    max-width: 150px; /* El video no excederá el ancho de su contenedor */
     height: auto; /* Mantiene la proporción */
     display: block; /* Necesario para que margin:auto funcione */
     margin: 20px auto; /* Centra el video horizontalmente y añade margen vertical */
