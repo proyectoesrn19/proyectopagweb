@@ -1,0 +1,115 @@
+<html>
+     <head>
+         <link rel="stylesheet" href="paginas.css">
+         <div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    .contenido {
+      height: 2500px;
+      padding: 40px;
+      background: linear-gradient(white, lightgray);
+    }
+    
+    /* Estilo del botón */
+    #btnInicio {
+
+      display: none; /* Oculto al inicio */
+      position: fixed; /* Fijo en la pantalla */
+      bottom: 30px; /*modifica la posicion vertical del boton*/
+      right: 30px; 
+      z-index: 1000;
+      font-size: 2px; /*modifica la alturo del boton (24)*/
+      border: none;
+      border-radius: 5%;
+      padding: 10px; /*modifica el ancho del boton (15)*/
+      background-color: #d66868;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    /*cambia el color del boton cuando el cursor lo toque*/
+    #btnInicio:hover {
+      background-color: #b95436;
+      transform: scale(1.1);
+    }
+    
+  </style>
+   </div>
+     </head>
+            <header>                  
+    <h1>FEMINISMO 2.0</h1>  
+    <p>Activismo, concientización y difusión de la ESI a través de plataformas digitales y redes sociales.</p>
+      
+    </header>
+
+   <body>  
+    <main>                    
+      <h3> Feminismo 2.0,este concepto se utiliza para describir como el movimiento feminista ha evolucionado
+    y se ha adaptado a la era digital ,especialmente con el uso de internet y redes sociales.
+Esto no tiene un inicio exacto o una fecha de comienzo,ya que no es una ola historica.Es una 
+evolución del movimiento que se dio de la mano con la popularización de la herramienta digital
+y la redes sociales permitiendo que el feminismo sea más accesible global y diverso que nunca.</h3>
+      
+<img src="imagenes/dc22ab79cca0e97a1484304e9f914de6.jpeg" alt="">
+                           <h2>CASO#NiUnaMeenos</h2>
+<h3>El movimiento #NiUnaMenos surgio en Argentina en 2015 como una respuesta a una serie de feminicidios
+    que conmovieron al pais.El caso que lo detonó fue el asesinato de Chiara Páez,una adolecente
+de 14 años que estaba embarazada .A través de twitter, un grupo de periodistas y activistas convocó 
+a una marcha masiva utilizando el hashtag#NiUnaMenos,que rápidamente se viralizó </h3>
+ <img src="imagenes/cnne-1617215-el-feminicidio-de-chiara-paez-el-crimen-que-detono-el-movimiento-ni-una-menos.jpg" alt="">
+ </main>
+  <div>
+   <!-- Botón que sigue al usuario -->
+   <button onclick="scrollToTop()" id="btnInicio" title="Volver al inicio"><img src="imagenes/flecha hacia arriba.png" width="40px" height="40px"></button>
+
+   <script > 
+     
+    // Detectar scroll
+    window.addEventListener('scroll', function () {
+      const btn = document.getElementById("btnInicio");
+      if (window.scrollY > 150) {
+        btn.style.display = "block";  // Aparece al bajar
+      } else {
+        btn.style.display = "none";   // Desaparece al volver arriba
+      }
+    });
+
+    // Volver al inicio con el scroll 
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+     </script>  
+     <style>
+    .boton-seccion {
+        background-color: #f8f9fa;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .boton-seccion:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+</style> 
+                         <section class="boton-seccion" onclick="window.location.href='index.html'"> 
+    <h3>volver a la pagina principal</h3>
+</section>
+  </body>
+<footer>
+    <div style="background-color: #ffffff; text-align: center; padding: 20px;">
+        <p>Proyecto informatico &copy; 2025 - Sitio Web</p>
+        <p>Escuela ESRN 19 - Josefina Bravo</p>
+        </footer>
+    </div>
+  
+
