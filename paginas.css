@@ -67,9 +67,9 @@ ul li::before {
   font-size: 1rem;
 }
 
-img {
+ img {
   align-items: center;
-  max-width: 70%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 1em auto;
@@ -78,10 +78,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-
-img img:hover {
-  transform: scale(1.70);
-}
 
 footer{
 text-align: center;
