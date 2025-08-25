@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <link rel="stylesheet" href="paginas.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LA HUELLA DIGITAL DE NUESTRA SEXUALIDAD</title>
+           <div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    .contenido {
+      height: 2500px;
+      padding: 40px;
+      background: linear-gradient(white, lightgray);
+    }
+    
+    /* Estilo del botón */
+    #btnInicio {
+
+      display: none; /* Oculto al inicio */
+      position: fixed; /* Fijo en la pantalla */
+      bottom: 30px; /*modifica la posicion vertical del boton*/
+      right: 30px; 
+      z-index: 1000;
+      font-size: 2px; /*modifica la alturo del boton (24)*/
+      border: none;
+      border-radius: 5%;
+      padding: 10px; /*modifica el ancho del boton (15)*/
+      background-color: #d66868;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    /*cambia el color del boton cuando el cursor lo toque*/
+    #btnInicio:hover {
+      background-color: #b95436;
+      transform: scale(1.1);
+    }
+    
+  </style>
+   </div>
+    </head>
+     <body>
+        <header>
+     <h1>la huella digital de nuestra sexualidad</h1> 
+     <h2>¿que dejamos en internet cuando hablamos de sexo? </h2>
+</header>
+<main>
+     <p>
+        cada vez que realizamos una busqueda en internet relacionada
+        con nuestra sexualidad,interactuamos en redes sociales, usamos apps
+        de citas o vemos contenido intimo, estamos dejando una huella digital
+        esta informacion puede ser almacenada por empresas, usada para publicidad
+        o incluso quedar expuesta si no protegemos nuestra  privacidad. es importante
+        reflexionar sobre que compartimos. con quien y como cuidamos nuestros datos
+        personales en el entorno digital.
+     </p>
+     <h4>INFORMACION QUE DEJAMOS DE FORMA CONSCIENTE:
+        <ul>
+        <li> *Cuentas y Perfiles:nombre, correo electronico, fotos, fecha de nacimiento,gustos,etc.</li>
+       <li> *Publicaciones:lo que compartimos en redes sociales, foros o blogs.</li>
+        <li>*Formularios:datos al registrarnos en paginas, compras online, encuesta.</li>
+        </ul>
+
+      <img src="imagenes/huella-digital.png">    <img src="imagenes/imagespan.jpeg">
+        
+    
+    
+        <ul> 
+         INFORMACION QUE DEJAMOS DE FORMA INCONSCIENTE:
+       <li> *Direccion IP:identifica la ubicacion aproximada del dispositivo.</li>
+       <li> *Historial de navegacion:sitios visitados, busquedas en google, tiempo en cada pagina. </li>
+       <li>*Cookies y trackers:pequeña archivos que guardan lo que hacemos en una web(ejemplo: que
+        productos miramos en una tienda online.)</li>
+       <li> *Datos del dispositivo:tipo de celular/computadora, sistema operativo, navegador, idioma.</li>
+        <li>*Geolocalizacion:muchas apps o webs registran donde estamos (aunque no lo publiquemos).</li>
+     </ul>
+        
+    
+      UTILIZAN ESTA INFORMACION PARA:
+        <ul>
+        <li>*publicidad personalizada:te muestran anuncios segun tus busquedas.</li>
+       <li> *Recomedaciones:netflix, youtube o spotify aprenden tus gustos.</li>
+       <li> *Estadadisticas:las webs saben cuantos usuarios tienen y de donde vienen.</li>
+        <li>*seguridad:bancos y correos detectan accesos sospechosos.</li>
+        </ul>
+        ¿COMO PROTEGER NUESTRA INFORMACION EN INTERNET?  <img src="imagenes/imageslol.png" >
+            <ul>
+     <li>Contraseñas seguras:largas, unicas y con simbolos.</li> 
+     <li>Verificacion en dos pasos(2FA):añade un codigo estra al iniciar sesion.</li>  
+     <li>Redes sociales:Configurar la privacidad y no compartas datos sensibles.</li>
+     <li>Navegacion:borra cookies/historial y usa modo incognito o navegadores privados.</li>
+     <li>Correos:cuidado con enlaces o archivos sospechosos.</li>
+     <li>Dispositivos:mantenlos actualizados y con bloqueo de seguridad.</li>
+
+     </ul>
+     </H4>
+
+
+
+
+     </main>
+           <div>
+   <!-- Botón que sigue al usuario -->
+   <button onclick="scrollToTop()" id="btnInicio" title="Volver al inicio"><img src="imagenes/flecha hacia arriba.png" width="40px" height="40px"></button>
+
+   <script > 
+     
+    // Detectar scroll
+    window.addEventListener('scroll', function () {
+      const btn = document.getElementById("btnInicio");
+      if (window.scrollY > 150) {
+        btn.style.display = "block";  // Aparece al bajar
+      } else {
+        btn.style.display = "none";   // Desaparece al volver arriba
+      }
+    });
+
+    // Volver al inicio con el scroll 
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+     </script>
+    </main> 
+       <style>
+    .boton-seccion {
+        background-color: #f8f9fa;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .boton-seccion:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }    
+</style>
+
+
+<section class="boton-seccion" onclick="window.location.href='index.html'"> 
+    <h3>volver a la pagina principal</h3>
+</section>
+
+     </body>
+     <br>
+     <footer>
+        <p>Lucas leal 5to 1ra</p>
+     </footer>
+     </html>
