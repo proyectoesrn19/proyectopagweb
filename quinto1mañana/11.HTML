@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="paginas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wwidth=device-width, initial-scale=1.0">
+    <title>El mal implemento de la comunidad LGBIQ+ en el cine</title>
+          <div>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    .contenido {
+      height: 2500px;
+      padding: 40px;
+      background: linear-gradient(white, lightgray);
+    }
+    
+    /* Estilo del botón */
+    #btnInicio {
+
+      display: none; /* Oculto al inicio */
+      position: fixed; /* Fijo en la pantalla */
+      bottom: 30px; /*modifica la posicion vertical del boton*/
+      right: 30px; 
+      z-index: 1000;
+      font-size: 2px; /*modifica la alturo del boton (24)*/
+      border: none;
+      border-radius: 5%;
+      padding: 10px; /*modifica el ancho del boton (15)*/
+      background-color: #d66868;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    /*cambia el color del boton cuando el cursor lo toque*/
+    #btnInicio:hover {
+      background-color: #b95436;
+      transform: scale(1.1);
+    }
+    
+  </style>
+   </div>
+</head>
+<body> 
+    <header>
+    <h1>EL MAL IMPLEMENTO DE LA COMUNIDAD LGBTIQ+ EN SERIES Y PELICULAS</h1>
+    <p>En los ultimos años muchas veces metieron personajes LGBTIQ+ en series y peliculas. normalmente a muchas personas a estos personajes no les gustaron por sentirse forsado a decir que son LGBTIQ+ para que sean notados, pero hubieron personajes LGBTIQ+ que les agrado al publico, ¿cual era la diferencia de ese personaje que si le gusto a la gente de los otros?</p>
+    </header>
+ <main class="contenido-principal">
+    <img src="imagenes/sherk.jpg" width="80%" >
+<p>Doris es una de ls hermanastras malvaddas de la saga de sherk que es muy querido por los fans de la pelicuas, doris es un persinaje que exagera en ser gay, pero es mas como un chiste sobre la comidad LGBTIQ+, una de las razones de que sea tan querido es que es un chiste en la misma saga, pero no lo mencionan tanto y no le dan tanta importancia, eso es algo que lo hace ver muy naturar y no sentirse forsado a decir que es gay.</p>
+<img src="imagenes/120.jpg" width="80%" >
+<p>El jugador 120 o Cho guyn-ju de los juegos del calamar es otro personaje de la comunidad LGBTIQ+ que es querido por muchos, como el caso de Doris el jugador 120 no se siente forsado, a lo largo de la serie sus acciones hacen que nos olvidemos que si es gay o no, eso hace que sea mas ntural ya que no te esta acordando a cada rato que es gay</p>
+<img src="imagenes/velma.jpg" width="80%" >
+<p>En este caso Velva de la serie velma es odiada por muchas cosas como los rediseño de personajes, su historia y sus chistes. 
+    Pero una de la mayores razones de que sea odiada es por que es de la comunidad LGBTIQ, una de las razones que es odiada por ser lesbiana es por que originalmente no lo era incluso teniendo una relacion con shaggy otro personaje querido de Scooby Doo. 
+    Otra de las razones es por que se siente forsado a ser lesbiana y su relacion con daphne se siente forsado por la historia</p>
+<h2>¿que los diferencia estos personajes?</h2>
+<p>¿por que otros son queridos y otros no? eso depende de varios factores que los pueden hacer querido o no, tales como no sentirse forsado, que no te lo recuerden a cada momento, la personalidad de ese personaje y que eso no estroope la historia de la pelicula o serie. En cuanto cumpla estos requisitos puede que no sea odiado por que aunque haga todo bien, siempre va a aver alguien que no le guste ese personaje por ser de la comunidad LGBTIQ+ sea bueno o no. ¿Pero como seria un personaje LGBTIQ+ que sea bien recibido en el cine?</p>
+<ul>
+que no sea su personalidad completa: cuando un personaje te recuerda a todo momento que es LGBTIQ+ y no tiene nada mas que lo haga importante, hace que sea facilmente odiado por ser molesto y sin nada importante.
+que sea natural: lo mejor para que sea recibido no es que lo digo muchas veces y que no se vea como un esteriotipo de personaje LGBTIQ+ y que no actue tanto como uno, si no vestir normal, hablar normal y tener algo propio que lo repesente adelas de eso.
+tener historia: normalmente los personajes LGBTIQ+ en la series y peliculas no tienen historia y lo unico que lo representa es ser de la comunidad LGBTIQ ya que la mayoria solo son para ser exclusivo, pero eso hace que no sea del agrado de muchos.
+</ul>
+<style>
+    .boton-seccion {
+        background-color: #f8f9fa;
+        color: black;
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .boton-seccion:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+</style>
+
+<section class="boton-seccion" onclick="window.location.href='index.html'"> 
+    <h3>volver a la pagina principal</h3>
+</section>
+ <div>
+   <!-- Botón que sigue al usuario -->
+   <button onclick="scrollToTop()" id="btnInicio" title="Volver al inicio"><img src="imagenes/flecha hacia arriba.png" width="40px" height="40px"></button>
+
+   <script > 
+     
+    // Detectar scroll
+    window.addEventListener('scroll', function () {
+      const btn = document.getElementById("btnInicio");
+      if (window.scrollY > 150) {
+        btn.style.display = "block";  // Aparece al bajar
+      } else {
+        btn.style.display = "none";   // Desaparece al volver arriba
+      }
+    });
+
+    // Volver al inicio con el scroll 
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+     </script>
+</main>
+<footer><h5>Lucas Moralez
+    ESRN-19
+</h5></footer>
+</body>
