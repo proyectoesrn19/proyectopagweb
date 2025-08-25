@@ -90,3 +90,14 @@ ul li::before {
     .boton-seccion:hover {
         background-color: rgba(0, 0, 0, 0.05);
     }
+
+    img {
+  align-items: center;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
