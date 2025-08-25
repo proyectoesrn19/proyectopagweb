@@ -93,7 +93,7 @@ ul li::before {
 
     img {
   align-items: center;
-  max-width: 300px;
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 1em auto;
