@@ -10,6 +10,8 @@
     --sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+* { box-sizing: border-box; }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -28,19 +30,19 @@ body {
     padding: 40px 20px;
     text-align: center;
     width: 100%;
-    box-sizing: border-box;
     box-shadow: var(--sombra-suave);
 }
 
 .encabezado h1 {
-    font-size: 2.8em;
+    font-size: 2.2rem;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .encabezado p {
-    font-size: 1.2em;
-    opacity: 0.9;
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin: 0.25rem 0;
 }
 
 .pie-de-pagina {
@@ -50,8 +52,8 @@ body {
 
 .pie-de-pagina p {
     margin: 5px 0;
-    font-size: 0.9em;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 .contenido-principal {
@@ -62,14 +64,13 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: var(--sombra-suave);
-    box-sizing: border-box;
     text-align: center;
 }
 
 .contenido-principal h2 {
     color: var(--color-primario);
-    font-size: 2.2em;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin: 30px 0 20px;
     position: relative;
     padding-bottom: 10px;
 }
@@ -94,102 +95,77 @@ body {
 .tema-card {
     background-color: var(--color-card-fondo);
     border: 1px solid var(--color-borde-card);
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 8px;
 }
 
-.tema-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--sombra-hover);
-}
-
-.tema-card h3 {
-    color: var(--color-secundario);
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 10px;
-    border-bottom: 2px solid var(--color-acento);
-    padding-bottom: 5px;
-    display: inline-block;
-}
-
-.tema-card p {
-    color: var(--color-secundario);
-    font-size: 1em;
-    margin-bottom: 0;
-}
+.tema-card:hover { transform: translateY(-6px); box-shadow: var(--sombra-hover); }
+.tema-card h3 { margin: 0; font-size: 1.25rem; color: var(--color-secundario); }
+.tema-card p { margin: 0; color: var(--color-secundario); }
 
 @media (max-width: 768px) {
-    .encabezado h1 {
-        font-size: 2em; 
-    }
-
-    .contenido-principal {
-        padding: 20px; 
-    }
+    .encabezado h1 { font-size: 1.6rem; }
+    .contenido-principal { padding: 20px; }
 }
 
 img {
     border-radius: 15px;
     box-shadow: var(--sombra-suave);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
-img:hover {
-    transform: scale(1.02);
-    box-shadow: var(--sombra-hover);
-}
+img:hover { transform: scale(1.02); box-shadow: var(--sombra-hover); }
 
-a {
-    text-decoration: none;
-    color: var(--color-primario);
-    transition: color 0.3s ease;
-}
+a { text-decoration: none; color: var(--color-primario); transition: color 0.3s ease; }
+a:hover { color: var(--color-acento); }
 
-a:hover {
-    color: var(--color-acento);
-}
 /* ===== Galería en cinta ===== */
 .galeria-cinta {
     width: 100%;
-    overflow: hidden;
     border-top: 2px solid var(--color-acento);
     margin-top: 40px;
-    padding: 15px 0;
+    padding: 10px 0;
     background: #fff;
     box-shadow: var(--sombra-suave);
+    overflow-x: auto;              /* permite scroll horizontal */
+    overflow-y: hidden;
+    scrollbar-width: none;         /* Firefox oculta */
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
 }
+
+.galeria-cinta::-webkit-scrollbar { display: none; } /* Chrome/Safari oculta */
 
 .cinta {
     display: flex;
-    gap: 20px;
-    animation: moverCinta 20s linear infinite;
+    gap: 14px;
+    padding: 6px 12px;
+    align-items: center;
 }
+
+.cinta a { flex: 0 0 auto; }
 
 .cinta img {
     height: 150px;
-    cursor: pointer;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.25s ease;
 }
 
-.cinta img:hover {
-    transform: scale(1.1);
-}
+.cinta img:hover { transform: scale(1.08); }
 
-/* Animación */
-@keyframes moverCinta {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
+/* Estado arrastrando: evita abrir links por error */
+.galeria-cinta.dragging { cursor: grabbing; }
+.galeria-cinta.dragging a { pointer-events: none; }
 
-/* ===== Modal ===== */
+/* ===== Modal (si lo usas) ===== */
 .modal {
     display: none;
     position: fixed;
@@ -216,4 +192,3 @@ a:hover {
     font-weight: bold;
     cursor: pointer;
 }
-
