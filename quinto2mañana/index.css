@@ -1,0 +1,152 @@
+body{text-align: justify;font-family: 'Times New Roman', Times, serif;margin: 0px; background-color: rgb(238, 217, 217);}
+
+main{margin: 35px;text-align: left;}
+
+footer{background-color: hsl(0, 65%, 28%); margin: 0px;padding: 25px;color: aliceblue;text-align: center;font-size: 22px;font-weight: bold;}
+
+header{background-color: hwb(0 10% 54%); margin: 0px;padding: 9px; color: aliceblue;text-align: center;}
+
+h1{font-size:47px;text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin: 10px;}
+
+h2{font-size: 33px;font-family: 'Times New Roman', Times, serif;margin: 10px}
+
+h3{font-size: 23px;margin: 10px}
+
+p{font-size: 22px;margin: 10px}
+
+h4{text-align: left;font-size: 20px;margin: 10px}
+
+h5{text-align: center; font-size: 22px;font-family: 'Times New Roman', Times, serif;font-weight: 300;margin: 10px}
+
+ul{text-align: left; font-size: 20;margin: 10px}
+
+li{text-align: left; font-size: 20;margin: 10px}
+
+hr{margin: 0px;}
+
+h3{color: black;}
+
+.imagen{width: 70%;align-items: center;border-radius: 15px;}
+
+img{
+  margin-top: 35px ;margin-bottom: 35px;
+  width: 40%;             
+  height: auto;             
+  border-radius: 15px;      
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  transition: transform 1.3s ease, box-shadow 0.3s ease; }
+
+  img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3)
+}
+
+  
+
+@media (max-width: 600px) {
+  
+}
+
+/* .centrar{display: flex;font-size: large;text-align: center;font-weight: bold; }
+
+.links{width: 30%;text-align: left;}*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Título centrado */
+main h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Contenedor principal */
+.centrar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor tipo grid para los botones */
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ajustable y responsivo */
+    gap: 30px; /* mayor separación entre botones */
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+/* Estilo de los h3 */
+.links h3 {
+    margin: 0;
+}
+
+/* Estilo de los enlaces como botones cuadrados */
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 120px; /* altura fija para uniformidad */
+    background-color: hwb(0 10% 54%);;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover efecto */
+.links a:hover {
+    background-color: #c9302c;
+    transform: scale(1.03);
+}
+
+/* Imágenes */
+.imagen_index {
+    text-align: center;
+}
+
+.imagen_index img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos solo aplicados a la página principal */
+main .imagen_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que bajen si no hay espacio */
+    gap: 20px; /* Espacio entre imágenes */
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+/* Estilos para las imágenes dentro de imagen_index */
+main .imagen_index img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex: 1 1 200px; /* Tamaño flexible: mínimo 200px por imagen */
+}
+
+img {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 1.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
