@@ -30,11 +30,24 @@ h3{color: black;}
 
 img{
   margin-top: 35px ;margin-bottom: 35px;
-  width: 40%;             
+              
   height: auto;             
   border-radius: 15px;      
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
   transition: transform 1.3s ease, box-shadow 0.3s ease; }
+
+  img {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 80%; 
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 1.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   img:hover {
   transform: scale(1.05);
@@ -44,7 +57,7 @@ img{
   
 
 @media (max-width: 600px) {
-    img{width: 80%;}
+    img{width: 40%;}
   
 }
 
@@ -139,15 +152,4 @@ main .imagen_index img {
     flex: 1 1 200px; /* Tamaño flexible: mínimo 200px por imagen */
 }
 
-img {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  width: 40%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 1.3s ease, box-shadow 0.3s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
