@@ -39,7 +39,7 @@ img{
   img {
   margin-top: 35px;
   margin-bottom: 35px;
-  width: 80%; 
+  width: 80%;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -57,7 +57,7 @@ img{
   
 
 @media (max-width: 600px) {
-    img{width: 40%;}
+    img{width: 80%; }
   
 }
 
